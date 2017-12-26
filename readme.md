@@ -1,4 +1,4 @@
-﻿# 💎powershellでスクリーンショットを取るやつ
+# 💎powershellでスクリーンショットを取るやつ
 
 ## 💎スクリプト名 :Get-PrintScreen.ps1
 
@@ -25,12 +25,18 @@ Get-PrintScreen.ps1のショートカットを作成して、そのショート�
 ### 💎リンク先
 
 サンプル1
+
+```cmd
 powershell.exe -WindowStyle Hidden -command "&{. .\Get-PrintScreen.ps1;Get-PrintScreen}"
+```
 
 引数を指定する場合は
 
 サンプル2
+
+```cmd
 powershell.exe -WindowStyle Hidden -command "&{. .\Get-PrintScreen.ps1;Get-PrintScreen -SleepTime 5}"
+```
 
 やっている事はpowershell.exeに引数を与えてスクリプトをドットソースで読み込んで関数Get-PrintScreenを実行している。
 
@@ -56,7 +62,7 @@ command　引数でスクリプトブロックを利用してドットソース�
 ## 💎使い方一例
 
 ▶リンク先にpowershell.exe -WindowStyle Hidden -command "&{. .\Get-PrintScreen.ps1;Get-PrintScreen}"  
-![ショートカット一例](image/ps.shortcut.png)  
+![ショートカット一例](image/ps.shortcut.png)
 
 作業フォルダにスクリプトが格納されているフォルダ
 
